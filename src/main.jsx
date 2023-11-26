@@ -7,14 +7,16 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import Home from "./routes/Home.jsx";
 import Contact from "./routes/Contact.jsx";
+import ErrorPage from "./routes/ErrorPage.jsx";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/arthurs_library/",
     element: <App />,
+    errorElement: <ErrorPage />,
     children: [
       {
-        path: "/",
+        path: "/arthurs_library/",
         element: <Home />
       },
       {
