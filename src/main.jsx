@@ -8,6 +8,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./routes/Home.jsx";
 import Contact from "./routes/Contact.jsx";
 import ErrorPage from "./routes/ErrorPage.jsx";
+import Carousel from "./routes/Carousel.jsx";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
       {
         path: "/arthurs_library/",
         element: <Home />
+      },
+      {
+        path: "carousel",
+        element: <Carousel />
       },
       {
         path: "contact",
